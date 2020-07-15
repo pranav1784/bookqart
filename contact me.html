@@ -1,0 +1,161 @@
+<html><head><title>Bookqart Care</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+color:#4CAF50;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.head1{
+background: #C6FFDD;
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #FFFFFF);  
+background: linear-gradient(to right, #f7797d, #FBD786, #FFFFFF);
+
+
+}
+.ima{
+margin-top:-120px;
+}
+.z1{
+color:#659999;
+}
+</style>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="head1">
+<header>
+<img src="C:\Users\prana\Downloads\WhatsApp Image 2019-04-22 at 12.10.16 PM.jpeg" align="left" width="120" height="120"><br><br><h2><font color="#2b5876">BOOKQART</font></h2>
+</header>
+<hr>
+<div class="head1">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Contact us for any suggestion or problems</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://cdn.pixabay.com/photo/2017/06/19/05/36/contact-us-2418235__340.jpg" width="600px" height="600px">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">What can we help you with?</label>
+<select id="country">
+          <option value="australia">Select question type(required)</option>
+          <option value="canada">Account issues</option>
+          <option value="usa">Advertising</option>
+	  <option value="usa">Friends and social</option>
+ <option value="canada">giveaway</option>
+          <option value="usa">My books</option>
+	  <option value="usa" selected>Privacy and Security</option>
+        </select>
+     
+        <label for="lname">What device were you using?</label>
+<select id="country">
+ <option value="australia">Select device type(required)</option>
+          <option value="canada">Android</option>
+          <option value="usa">IOS</option>
+	  <option value="usa">Desktop</option>
+ <option value="canada">Others</option>
+        </select>
+<label for="E-mail id">E-Mail id</label>
+<input type="text" placeholder="email id" id="i1" required>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+	  <option value="usa" selected>India</option>
+        </select>
+<label for="photo">Screenshot(optional,1MB limit)</label><br><br>
+<input type="file"><br><br>
+        <label for="subject">Your question-please be specific:</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        
+<div class="w3-container">
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p class="z1">Sorry for any inconvinience caused! we have recieved your query.</p>
+        <p class="z1">We will be in contact with you within 24 hours.</p>
+<p align="left"> Bookqart the book review website.</p>
+<img src="C:\Users\prana\Downloads\WhatsApp Image 2019-11-11 at 11.12.46 PM (1).jpeg" align="right" width="125" height="125" class="ima">
+      </div>
+    </div>
+  </div>
+</div>
+<button onclick="fun()" class="w3-button w3-green">Submit</button>
+
+
+
+      </form>
+    </div>
+  </div>
+</div>
+<footer align="center"><font color="grey">Copyright © 2019 Bookqart Inc. All rights reserved.<br><br>Contact us at support@bookqart.com</font></footer>
+<script>
+function fun()
+{
+
+document.getElementById('id01').style.display='block';
+
+}
+</script>
+</body>
+</ul>
+</nav>
