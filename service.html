@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<title>Our services</title>
+<style>
+.head1{
+background: #659999;  
+background: -webkit-linear-gradient(to right, #f4791f, #659999); 
+background: linear-gradient(to right, #f4791f, #659999); 
+
+}
+.h1{
+text-align:center;
+color:#434343;
+}
+input[type=text], select, textarea{
+ width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+#l1{
+font-size:20px;
+font-family:Arial;
+color:#240b36;
+}
+.but{
+color:white;
+background-color:green;
+padding:12px 20px;
+border:none;
+}
+button:hover {
+  background-color: white;
+color:#4CAF50;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #659999;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #659999;
+  cursor: pointer;
+}  
+.imag{
+width:38%;
+height:38%;
+margin-right:120px;
+ }
+.tab{
+margin-left:30px;
+}
+.z1{
+color:#659999;
+}
+.c1{
+margin:3px 0px 0px 3px;
+}
+.ima{
+margin-top:-80px;
+}
+</style>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="head1">
+<header>
+<img src="C:\Users\prana\Downloads\WhatsApp Image 2019-04-22 at 12.10.16 PM.jpeg" align="left" width="120" height="120" class="c1"><br><br><h2><font color="#2b5876">BOOKQART</font></h2>
+</header>
+<hr>
+<h1 class="h1">Review a book and become a member of Bookqart family</h1>
+<img align="right" class="imag" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzuAGMR0tdFxTUxytXtqRu0mUAMuuBTnXC7eUkN1pKijms-Ahu">
+<form class="tab">
+<table cellspacing="5">
+<tr><td><label id="l1">Full Name</label></td>
+<td><input type="text" id="i" minlength="6" required/></td></tr>
+<tr><td><label id="l1">E-Mail Id</label></td>
+<td><input type="text" id="i" minlength="10" required/><td></tr>
+<tr><td><label id="l1">Book Name</label></td><td><input type="text" id="i" minlength="6" required></td></tr>
+<tr><td><label id="l1">Your Review</label></td><td><textarea rows="5" cols="35" placeholder="Write your review here... minimum length should be 50" id="i" minlength="50" required></textarea>
+<tr><td><label id="l1">Ratings(1-10)</td><td><input type="range" min="1" max="10" class="slider" id="myRange"></td></tr> 
+</table>
+<br><br>
+<input type="checkbox" id="i" required><label style="color:#240b36">Please agree to bookqart terms and conditions and privacy policy</label><br><br>
+
+<div class="w3-container">
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p class="z1">Thank you for writing your precious review on bookqart we hae recieved it and will be online shortly.</p>
+        <p class="z1">Welcome to the bookqart community!!!</p>
+<img src="C:\Users\prana\Downloads\WhatsApp Image 2019-04-22 at 12.10.16 PM.jpeg" align="right" width="120" height="120" class="ima">
+<p>Bookqart the book review website.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Submit</button>
+<button  onclick="f2()" class="but">Reset</button>
+</form>
+
+<footer align="center"><font color="#434343">Copyright © 2019 Bookqart Inc. All rights reserved.<br><br>Contact us at support@bookqart.com</font></footer> 
+<script>
+
+
+function f1()
+{
+alert("your form is submitted.");
+}
+
+</script>
+</body>
+</html>
